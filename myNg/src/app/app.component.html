@@ -1,11 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    Welcome to {{ title }}!
+    {{ title }}
   </h1>
   <img width="100" alt="Angular Logo" src="../assets/shopping.ico">
 </div>
-<h2>Here are some links to help you start: </h2>
+<!-- <app-heroes></app-heroes> -->
+<!-- <app-messages></app-messages> -->
+<!--<h2>Here are some links to help you start: </h2>
 <ul>
   <li>
     <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
@@ -16,6 +18,12 @@
   <li>
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
-</ul>
-
+</ul>-->
+<hr/>
+<nav>
+  <a routerLink="/dashboard">Dashboard</a>
+  <span style="padding:10px;"></span>
+  <a routerLink="/heroes">Heroes</a>
+</nav>
+<hr/>
 <router-outlet></router-outlet>

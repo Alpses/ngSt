@@ -1,0 +1,9 @@
+<div *ngIf="MeS.mes.length">
+  <p>messageService part</p>
+  <h2>Messages</h2>
+  <button class="clear"
+          (click)="MeS.clear()">clear</button>
+  <div *ngFor='let message of MeS.mes'> {{message}} </div>
+
+</div>
+<div style="color:red;">{{MeS | json }}</div>
